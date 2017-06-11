@@ -11,20 +11,20 @@ package desgin.patterns.creational.singleton;
 public class PresidentLazySyncDC {
 
 
-    private static PresidentLazySyncDC president_Lazy;
+    private static PresidentLazySyncDC instance;
 
     private PresidentLazySyncDC() {
     }
 
     public static PresidentLazySyncDC getInstance() {
-        if (president_Lazy == null) {
+        if (instance == null) {
             synchronized (PresidentLazySyncDC.class) {
-                if (president_Lazy == null) {
-                    president_Lazy = new PresidentLazySyncDC();
+                if (instance == null) {
+                    instance = new PresidentLazySyncDC();
                 }
             }
         }
-        return president_Lazy;
+        return instance;
     }
 
 }

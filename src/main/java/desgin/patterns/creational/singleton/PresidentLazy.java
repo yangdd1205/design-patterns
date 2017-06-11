@@ -13,16 +13,16 @@ package desgin.patterns.creational.singleton;
  */
 public class PresidentLazy {
 
-    private static PresidentLazy president_Lazy;
+    private static PresidentLazy instance;
 
     private PresidentLazy() {
     }
 
     public static PresidentLazy getInstance() {
-        if (president_Lazy == null) {
-            president_Lazy = new PresidentLazy();
+        if (instance == null) {
+            instance = new PresidentLazy();
         }
-        return president_Lazy;
+        return instance;
     }
 
 }

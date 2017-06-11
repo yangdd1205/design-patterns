@@ -11,13 +11,13 @@ package desgin.patterns.creational.singleton;
  */
 public class PresidentEager {
 
-    private static final PresidentEager PRESIDENT_EAGER = new PresidentEager();
+    private static final PresidentEager INSTANCE = new PresidentEager();
 
     private PresidentEager() {
     }
 
     public static PresidentEager getInstance() {
-        return PRESIDENT_EAGER;
+        return INSTANCE;
     }
 
 }
