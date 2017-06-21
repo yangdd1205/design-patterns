@@ -6,6 +6,8 @@
 
 * [单例模式](https://github.com/yangdd1205/design-patterns/blob/master/src/main/java/desgin/patterns/creational/singleton/singleton.md)
 
+* [工厂模式](https://github.com/yangdd1205/design-patterns/blob/master/src/main/java/desgin/patterns/creational/factory/Factory.md)
+
 
 ------
 
